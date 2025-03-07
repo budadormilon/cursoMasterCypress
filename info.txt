@@ -1,0 +1,9 @@
+1. npm init                             --> Para inicializar el sistema de paquetes y general el package.json
+2. npm install cypress --save-dev       --> Instalacion cypress
+3. npm install -g npx                   --> Instalacion npx
+4. npx cypress open                     --> Abre Cypress consola
+5. Ctrl + c                             --> Parar consola
+
+Paginas importantes
+
+
