@@ -45,6 +45,7 @@ describe("Select Menu", () => {
         cy.get('#cars').should('be.visible').select(['Volvo', 'Opel', 'Audi']).then(() => {
             cy.get('#selectOne').click();
         });
+        
         const expectedText = ['Dr.', 'Mr.', 'Mrs.', 'Ms.', 'Prof.', 'Other'];
 
         cy.get('[id*="react-select-3-option-"]').each(($el, index) => {

@@ -4,6 +4,7 @@ module.exports = defineConfig({
   e2e: {
     viewportWidth: 1920, // Ancho en píxeles
     viewportHeight: 1080, // Alto en píxeles
+    chromeWebSecurity: false, // Deshabilita la seguridad de Chrome
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },

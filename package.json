@@ -4,11 +4,19 @@
   "description": "Curso de Cypress",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "npx cypress run",
+    "testChromeHeaded": "npm run test -- --browser chrome --headed",
+    "testChromeHeadless": "npm run test -- --browser chrome --headless",
+    "testFirefoxHeaded": "npm run test -- --browser firefox --headed",
+    "testFirefoxHeadless": "npm run test -- --browser firefox --headless",
+    "cypress:all:regresion": "npm run cypress:ft:regresion && npm run cypress:js:regresion"
   },
   "author": "Leandro",
   "license": "ISC",
   "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.3.0",
     "cypress": "^14.1.0",
     "cypress-xpath": "^2.0.1"
   },
