@@ -27,7 +27,7 @@ describe("Reto con Select", () => {
 
     });
 
-    it.only("Referencias a Windows - validar URL", () => {
+    it("Referencias a Windows - validar URL", () => {
         cy.visit("https://testsheepnz.github.io/random-game-instructions.html");
         cy.title().should('eq', 'The Number Game - Instructions')
         cy.wait(500)

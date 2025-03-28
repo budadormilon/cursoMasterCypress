@@ -183,7 +183,7 @@ describe("Practicas con Assert", () => {
 
     });
 });
-it.only("Reto con Assert usando invoke attr color borde", () => {
+it("Reto con Assert usando invoke attr color borde", () => {
 
     cy.visit("https://demoqa.com/text-box")
     cy.title().should('eq', 'DEMOQA')

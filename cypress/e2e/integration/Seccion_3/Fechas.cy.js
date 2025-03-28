@@ -13,7 +13,7 @@ describe("Campos de tipo Fecha", () => {
             .should('be.visible') // Verifica que el span es visible
             .click()
     });
-    it.only("Fecha uno", () => {
+    it("Fecha uno", () => {
         cy.visit("https://ant.design/components/date-picker")
         
         cy.get('#date-picker-demo-basic >>> :nth-child(1) >>> input', {timeout:10000}).should('be.visible').type("2024-01-02").wait(200).tab()

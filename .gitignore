@@ -1,0 +1,5 @@
+/node_modules
+/build
+/a
+/cypress/screenshots
+/cypress/videos

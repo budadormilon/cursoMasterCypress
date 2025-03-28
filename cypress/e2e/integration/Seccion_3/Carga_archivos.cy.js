@@ -12,7 +12,7 @@ describe("Carga de Archivos", () => {
         cy.get('input[type=file]').should('be.visible').selectFile('cypress/fixtures/imagenes/CH.jpg')    
     });
 
-    it.only("Se carga Archivo (upload) - Drag & Drop", () => {
+    it("Se carga Archivo (upload) - Drag & Drop", () => {
         cy.visit("https://www.dragdrop.com/test");
         cy.title().should('eq', 'Test drag & drop emails and attachments - DragDrop')
         cy.wait(500)

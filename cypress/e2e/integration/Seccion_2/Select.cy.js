@@ -37,7 +37,7 @@ describe("Select Menu", () => {
     });
 
 
-    it.only("Pruebas con MultiSelect con promesa then", () => {
+    it("Pruebas con MultiSelect con promesa then", () => {
         cy.visit("https://demoqa.com/select-menu")
         cy.title().should('eq', 'DEMOQA')
         cy.wait(500)

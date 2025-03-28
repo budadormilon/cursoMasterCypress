@@ -4,7 +4,7 @@ require('cypress-xpath');
 
 describe("Reto con Select", () => {
 
-    it.only("Prueba con select Dual Listbox", () => {
+    it("Prueba con select Dual Listbox", () => {
         cy.visit("https://www.virtuosoft.eu/code/bootstrap-duallistbox/");
         cy.title().should('eq', 'Bootstrap Dual Listbox')
         cy.wait(500)

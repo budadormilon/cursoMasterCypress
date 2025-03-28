@@ -36,7 +36,7 @@ describe("Cypress Eventos con el Mouse", () => {
         cy.get('[src="/images/demo/5.jpg"]').trigger('mouseout', { force: true }).should('have.attr', 'src', '/images/demo/4.jpg');
     });
 
-    it.only("Mouse - Slider", () => {
+    it("Mouse - Slider", () => {
         cy.visit("https://www.w3schools.com/howto/howto_js_rangeslider.asp");
         //cy.title().should('eq', 'Rangeslider - jQuery Mobile Demos')
         cy.wait(500)

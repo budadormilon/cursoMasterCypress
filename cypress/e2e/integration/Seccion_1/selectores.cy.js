@@ -30,7 +30,7 @@ describe("Tipos de selectores", () => {
         cy.xpath("(//textarea[@rows='5'])[1]").should('be.visible').type('Direccion xpath') 
     });
 
-    it.only("Selector por Contains", () => {
+    it("Selector por Contains", () => {
         cy.visit("https://demoqa.com/automation-practice-form")
         cy.title().should('eq', 'DEMOQA') 
         cy.wait(500)
