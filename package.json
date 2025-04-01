@@ -15,10 +15,16 @@
   },
   "author": "Leandro",
   "license": "ISC",
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/cucumber_step_definitions/**/*.js"
+  },
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.3.0",
-    "cypress": "^14.1.0",
-    "cypress-xpath": "^2.0.1"
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "cypress": "^14.2.1",
+    "cypress-xpath": "^2.0.1",
+    "esbuild": "^0.25.2"
   },
   "dependencies": {
     "cypress-plugin-tab": "^1.0.5",

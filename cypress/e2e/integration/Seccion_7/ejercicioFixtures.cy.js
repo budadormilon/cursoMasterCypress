@@ -7,6 +7,7 @@ describe('Pruebas carga por Fixture', () => {
 
     let tiempo = 500
 
+    
     before(function () {// ← Usar Función tradicional
         cy.fixture("datos_textBox").then((datos) => {
             this.datoso = datos;
@@ -16,6 +17,7 @@ describe('Pruebas carga por Fixture', () => {
         cy.wait(tiempo)
 
     });
+
 
     it('prueba con fixture', function () { // ← Usar Función tradicional
 
