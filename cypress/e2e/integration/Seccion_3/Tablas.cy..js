@@ -8,7 +8,7 @@ require('cypress-plugin-tab');
 
 describe("Elementos de una Tabla", () => {
 
-    it("Tablas - Seelccionar por CHILDREN", () => {
+    it.only("Tablas - Seelccionar por CHILDREN", () => {
         cy.visit("https://www.w3schools.com/howto/howto_js_filter_elements.asp");
 
         cy.get('#mycontainerclass').children("[onclick=\"activeFunction();filterSelection('cars')\"]").click({ force: true })
@@ -16,7 +16,7 @@ describe("Elementos de una Tabla", () => {
     });
 
 
-    it("Tablas - Seelccionar por elementos EQ", () => {
+    it.only("Tablas - Seelccionar por elementos EQ", () => {
         cy.visit("https://demoqa.com/buttons");
 
         cy.get('div > [type=button]').eq(2).should('contain', 'Click Me').click()
@@ -29,7 +29,7 @@ describe("Elementos de una Tabla", () => {
         cy.get('button').filter(':contains("Cars")').click({ force: true }) //contains es útil para buscar un elemento que contenga un texto específico.     
     });
 
-    it("Tablas - Seelccionar por FIND", () => {
+    it.only("Tablas - Seelccionar por FIND", () => {
         cy.visit("https://testautomationpractice.blogspot.com/#");
 
         cy.get('.widget-content').find('#confirmBtn').should('contain', 'Confirmation Alert').click({ force: true })
@@ -39,7 +39,7 @@ describe("Elementos de una Tabla", () => {
     });
 
 
-    it("Tablas - Seleccionar por FIRST y LAST", () => {
+    it.only("Tablas - Seleccionar por FIRST y LAST", () => {
         cy.visit("https://testautomationpractice.blogspot.com/#");
 
         cy.get('#HTML9 > .widget-content > button').first().should('contain', 'Simple Alert').click({ force: true })

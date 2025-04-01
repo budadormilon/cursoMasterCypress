@@ -11,7 +11,11 @@
     "testChromeHeadless": "npm run test -- --browser chrome --headless",
     "testFirefoxHeaded": "npm run test -- --browser firefox --headed",
     "testFirefoxHeadless": "npm run test -- --browser firefox --headless",
-    "cypress:all:regresion": "npm run cypress:ft:regresion && npm run cypress:js:regresion"
+    "cypress:all:regresion": "npm run cypress:ft:regresion && npm run cypress:js:regresion",
+    "test:tablas": "npx cypress run --spec cypress/e2e/integration/Seccion_3/Tablas.cy..js",
+    "test:tablas:cloud": "npx cypress run --record --key 7bccb50b-edbe-4314-93e1-013e65dd8e45 --spec cypress/e2e/integration/Seccion_3/Tablas.cy..js"
+
+    
   },
   "author": "Leandro",
   "license": "ISC",
