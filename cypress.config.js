@@ -15,6 +15,7 @@ module.exports = defineConfig({
     runMode: 0,     // No reintentos en CI
     openMode: 0     // 0 reintento en modo interactivo
   },
+  projectId: 'qk38ng', // <- add this line
 
   e2e: {
     // Configuraciones de video

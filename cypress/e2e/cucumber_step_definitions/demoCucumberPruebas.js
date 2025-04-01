@@ -26,7 +26,7 @@ When ('click en boton', () => {
 Then ('validar que {word} fue cargada', (Name) => {
  // Validaciones
  cy.get('#output').should('be.visible');
- cy.get('#name').should('contain', Name);
+ cy.get('#name').should('contain', Name); 
 })
 
 
