@@ -15,7 +15,8 @@ pipeline {
                         git credentialsId: '36861a3f-3c8e-4a5e-a689-a2e495dfd85c', branch: 'main' , url: 'https://github.com/budadormilon/cursoMasterCypress.git'                        
                         bat 'npm install'
                         //bat 'npm update'                       
-                        bat 'npx cypress run --record --key 7bccb50b-edbe-4314-93e1-013e65dd8e45 --spec cypress/e2e/integration/Seccion_1/ --parallel'
+                        //bat 'npx cypress run --record --key 7bccb50b-edbe-4314-93e1-013e65dd8e45 --spec cypress/e2e/integration/Seccion_1/ --parallel'
+                        bat 'npx cypress run --spec cypress/e2e/integration/Seccion_1/'
                     
                     }
                 }
@@ -28,7 +29,8 @@ pipeline {
                         git credentialsId: '36861a3f-3c8e-4a5e-a689-a2e495dfd85c', branch: 'main' , url: 'https://github.com/budadormilon/cursoMasterCypress.git'                        
                         bat 'npm install'
                         //bat 'npm update'                       
-                        bat 'npx cypress run --record --key 7bccb50b-edbe-4314-93e1-013e65dd8e45 --spec cypress/e2e/integration/Seccion_1/ --parallel'                    
+                        //bat 'npx cypress run --record --key 7bccb50b-edbe-4314-93e1-013e65dd8e45 --spec cypress/e2e/integration/Seccion_1/ --parallel'
+                        bat 'npx cypress run --spec cypress/e2e/integration/Seccion_1/'
                     }
                 }
 
@@ -40,7 +42,8 @@ pipeline {
                         git credentialsId: '36861a3f-3c8e-4a5e-a689-a2e495dfd85c', branch: 'main' , url: 'https://github.com/budadormilon/cursoMasterCypress.git'                        
                         bat 'npm install'
                        // bat 'npm update'                       
-                        bat 'npx cypress run --record --key 7bccb50b-edbe-4314-93e1-013e65dd8e45 --spec cypress/e2e/integration/Seccion_1/ --parallel'                    
+                        //bat 'npx cypress run --record --key 7bccb50b-edbe-4314-93e1-013e65dd8e45 --spec cypress/e2e/integration/Seccion_1/ --parallel'
+                        bat 'npx cypress run --spec cypress/e2e/integration/Seccion_1/'
                     }
                 }
                 stage('Slave 4') {
@@ -51,7 +54,8 @@ pipeline {
                         git credentialsId: '36861a3f-3c8e-4a5e-a689-a2e495dfd85c', branch: 'main' , url: 'https://github.com/budadormilon/cursoMasterCypress.git'                        
                         bat 'npm install'
                         //bat 'npm update'                       
-                        bat 'npx cypress run --record --key 7bccb50b-edbe-4314-93e1-013e65dd8e45 --spec cypress/e2e/integration/Seccion_1/ --parallel'
+                        //bat 'npx cypress run --record --key 7bccb50b-edbe-4314-93e1-013e65dd8e45 --spec cypress/e2e/integration/Seccion_1/ --parallel'
+                        bat 'npx cypress run --spec cypress/e2e/integration/Seccion_1/'
                     
                     }
                 }
