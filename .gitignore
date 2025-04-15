@@ -1,5 +1,31 @@
-/node_modules/
+
 /build
 /a
-/cypress/screenshots
-/cypress/videos
+
+# Node.js
+node_modules/
+
+# Cypress output
+cypress/videos/
+cypress/screenshots/
+
+# VS Code settings
+.vscode/
+
+
+# Windows
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Env variables
+.env
+.env.*
+
+# Coverage
+coverage/
+
+# Esbuild cache
+.esbuild/
