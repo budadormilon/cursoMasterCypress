@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+/// <reference types="Cypress" />
 require('cypress-xpath');
 import '@4tw/cypress-drag-drop';
 
@@ -10,7 +10,6 @@ describe("Cypress Eventos con el Mouse", () => {
         cy.visit("https://demoqa.com/droppable");
         cy.title().should('eq', 'DEMOQA')
         cy.wait(500)
-
         cy.get('#draggable').drag('#droppable', { force: true }).then(() => {
             cy.wait(2500)
             cy.get('#droppableExample-tab-revertable').click({ force: true })

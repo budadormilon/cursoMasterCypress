@@ -14,8 +14,6 @@
     "cypress:all:regresion": "npm run cypress:ft:regresion && npm run cypress:js:regresion",
     "test:tablas": "npx cypress run --spec cypress/e2e/integration/Seccion_3/Tablas.cy..js",
     "test:tablas:cloud": "npx cypress run --record --key 7bccb50b-edbe-4314-93e1-013e65dd8e45 --spec cypress/e2e/integration/Seccion_3/Tablas.cy..js"
-
-    
   },
   "author": "Leandro",
   "license": "ISC",
@@ -31,6 +29,7 @@
     "esbuild": "^0.25.2"
   },
   "dependencies": {
+    "@faker-js/faker": "^9.6.0",
     "cypress-plugin-tab": "^1.0.5",
     "lodash": "^4.17.21"
   }

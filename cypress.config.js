@@ -27,6 +27,8 @@ module.exports = defineConfig({
     viewportWidth: 1920, // Ancho en píxeles
     viewportHeight: 1080, // Alto en píxeles
 
+    // Habilita la función experimental de Studio
+    experimentalStudio: true,  
 
     async setupNodeEvents(on, config) {
       // implement node event listeners here
