@@ -23,12 +23,16 @@ module.exports = defineConfig({
     videosFolder: "cypress/videos",  // Ruta donde se guardarán los videos
     videoCompression: 32,
 
+    // Configuración para capturar screenshots
+    screenshotOnRunFailure: true, // Toma un screenshot cuando el test falla
+    screenshotsFolder: "cypress/screenshots", // Ruta donde se guardarán las capturas de pantalla
+
     // Configuraciones de capturas de pantalla
     viewportWidth: 1920, // Ancho en píxeles
     viewportHeight: 1080, // Alto en píxeles
 
     // Habilita la función experimental de Studio
-    experimentalStudio: true,  
+    experimentalStudio: true,
 
     async setupNodeEvents(on, config) {
       // implement node event listeners here
